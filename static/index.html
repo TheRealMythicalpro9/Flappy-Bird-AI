@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Flappy Bird AI — Neuroevolution (JS)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <h1>Flappy Bird AI</h1>
+    <div class="controls">
+      <button id="startBtn">Start / Restart</button>
+      <button id="toggleAI">Toggle AI (on)</button>
+      <label>Population: <input id="popSize" type="number" min="10" max="500" value="120" /></label>
+      <label>Speed: <input id="simSpeed" type="range" min="1" max="6" value="1" /></label>
+      <span id="stats"></span>
+    </div>
+    <p>Click canvas to flap when playing manually. AI will evolve across generations.</p>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <script src="nn.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

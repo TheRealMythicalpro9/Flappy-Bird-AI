@@ -1,2 +1,2 @@
-neat-python
-pygame
+flask
+gunicorn
